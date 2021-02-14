@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>nth-child 선택자</title>
+    <style>
+      li {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        list-style: none;
+      }
+
+      /* 첫번째 자식태그 */
+      li:first-child {
+        background: red !important;
+      }
+
+      /* 마지막 자식태그*/
+      li:last-child {
+        background: blue;
+      }
+
+
+      /* 세번째 태그요소 */
+      li:nth-child(3) {
+        background: purple;
+      }
+
+      /* 0부터 시작하는 3의 배수 */
+      li:nth-child(3n + 0) {
+        background: orange;
+      }
+
+      /* 7번째부터 시작하는 3의 배수 */
+      li:nth-child(3n + 7) {
+        background: yellow;
+      }
+
+      /* 홀수번째 : 찐한 회색 */
+      li:nth-child(odd) {
+        background: #ccc;
+      }
+
+      /* 짝수번째 : 연한 회색*/
+      li:nth-child(even) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+      <li>Item 7</li>
+      <li>Item 8</li>
+      <li>Item 9</li>
+      <li>Item 10</li>
+      <li>Item 11</li>
+      <li>Item 12</li>
+      <li>Item 13</li>
+      <li>Item 14</li>
+      <li>Item 15</li>
+      <li>Item 16</li>
+      <li>Item 17</li>
+      <li>Item 18</li>
+      <li>Item 19</li>
+      <li>Item 20</li>
+    </ul>
+  </body>
+</html>

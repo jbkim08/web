@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>키프레임즈(Keyframes)</title>
+    <style>
+      body {
+        background: #333;
+      }
+
+      .box {
+        font-size: 200px;
+        width: 200px;
+        height: 200px;
+        background: transparent;
+        position: relative;
+        animation-name: animate1; /* 이름 */
+        animation-duration: 5s;   /* 시간 */
+        animation-iteration-count: infinite; /* 횟수 */
+        animation-fill-mode: backwards; /* 마지막 상태 */
+        animation-direction: alternate; /* 진행방향 */
+      }
+
+      @keyframes animate1 {
+        /* from to 방법 */
+        0% {
+          transform: translateX(0);
+        }
+
+        40% {
+          transform: translateX(250%);
+        }
+        50% {
+          transform: translateX(250%) rotate(360deg);
+        }
+
+        100% {
+          transform: translateX(500%) scale(2) rotate(360deg);
+         
+        }
+      }
+
+      @keyframes animate2 {
+        /* % 방법 */
+        0% {
+          left: 0px;
+          top: 0px;
+          background-color: white;
+          border-radius: 0 0 0 0;
+        }
+        25% {
+          left: 300px;
+          top: 0px;
+          background-color: red;
+          border-radius: 50% 0 0 0;
+        }
+        50% {
+          left: 300px;
+          top: 300px;
+          background-color: green;
+          border-radius: 50% 50% 0 0;
+        }
+        75% {
+          left: 0px;
+          top: 300px;
+          background-color: blue;
+          border-radius: 50% 50% 50% 0;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+          background-color: white;
+          border-radius: 50% 50% 50% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">⭐</div>
+  </body>
+</html>

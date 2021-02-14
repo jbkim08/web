@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS 셀렉터 플러스</title>
+    <style>
+      /* 부모태그 바로 아래의 태그일때 > 사용 */
+      div > p {
+        background-color: #ddd;
+      }
+
+      /* 바로 다음의 형제 태그 */
+      div + p {
+        background: #333;
+        color: #fff;
+      }
+
+      /* 다음의 형제 태그들 */
+      ul ~ p {
+        background: #ff0000;
+        color: #fff;
+      }
+
+      /* 속성을 선택자로 [] 사용  */
+      a[target] {
+        background: #dddddd;
+      }
+
+      /* 속성 전체를 선택자로 [] 사용 */
+      input[type='text'],
+      input[type='email'] {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <ul>
+        <li>아이템 1</li>
+        <li><p>Lorem ipsum dolor sit amet.</p></li>
+        <li>아이템 3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#">페이지 1</a> <a href="#">페이지 2</a>
+    <a href="http://google.com" target="_blank">Google</a>
+
+    <br /><br />
+
+    <form>
+      <input type="text" placeholder="이름" />
+      <input type="email" placeholder="이메일" />
+      <input type="submit" value="보내기" />
+    </form>
+  </body>
+</html>

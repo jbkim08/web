@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Single+Day&display=swap');
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#title {
+    background-color: #ff4c68;
+    color: white;
+}
+.container-fluid {
+    padding: 3% 15%;
+}
+h1 {
+    font-family: 'Single Day', cursive;
+    font-size: 3.7rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+h3 {
+    font-family: 'Single Day', cursive;
+    font-size: 2rem;
+    font-weight: 900;
+}
+p {
+    color: #8f8f8f;
+}
+/* 네브바 */
+.navbar {
+    padding: 0 0 4.5rem 0;
+}
+.navbar .navbar-brand {
+    font-size: 2.5rem;
+}
+.navbar .nav-item {
+    margin: 0 20px;
+}
+.navbar .nav-item .nav-link {
+    font-size: 1.3rem;
+}
+
+#title .row .btn {
+    margin: 5% 3% 5% 0;
+}
+#title .row img {
+    width: 60%;
+    margin-left: 30px;
+    transform: rotate(25deg) ; 
+}
+
+/* feature section */
+#features {
+    padding: 7% 15%;
+}
+#features i {
+    font-size: 4rem;
+    color: coral;
+    margin-bottom: 1rem;
+}
+#features i:hover {
+    color: #ff4c68;
+    transform: scale(1.1);
+    transition:all ease 0.4s;
+}
+/* Testimonials section */
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: coral;
+    color: #fff;
+}
